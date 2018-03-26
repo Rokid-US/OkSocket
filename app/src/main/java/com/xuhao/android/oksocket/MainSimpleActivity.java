@@ -128,7 +128,9 @@ public class MainSimpleActivity extends AppCompatActivity {
         mReceList.setLayoutManager(manager2);
         mReceList.setAdapter(mReceLogAdapter);
 
-        mInfo = new ConnectionInfo("104.238.184.237", 8080);
+        // Change to the local server
+        // mInfo = new ConnectionInfo("104.238.184.237", 8080);
+        mInfo = new ConnectionInfo("192.168.86.45", 8081);
         mOkOptions = new OkSocketOptions.Builder(OkSocketOptions.getDefault())
                 .setReconnectionManager(new NoneReconnect())
                 .build();
