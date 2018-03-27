@@ -157,7 +157,8 @@ public class MainActivity extends AppCompatActivity {
         mReceList.setAdapter(mReceLogAdapter);
 
 //        mInfo = new ConnectionInfo("111.206.162.233", 8088);
-        mInfo = new ConnectionInfo("117.136.38.163", 8080);
+//        mInfo = new ConnectionInfo("117.136.38.163", 8080);
+        mInfo = new ConnectionInfo("192.168.0.105", 8080);
         mManager = open(mInfo);
         mOkOptions = OkSocketOptions.getDefault();
     }
